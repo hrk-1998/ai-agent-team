@@ -6,8 +6,18 @@ Owner edge: simple Persian. Machine edges: strict English.
 
 ## Install (auto in every project)
 
-1. Validate: `claude plugin validate ./staged-team`
-2. Test one session: `claude --plugin-dir ./staged-team`, then `/ai-agent-team:team-workflow`
+Install from the marketplace (Claude Code 2.1.275+):
+
+```
+/plugin install ai-agent-team --marketplace hrk-1998/ai-agent-team
+```
+
+First add the marketplace once: `/plugin marketplace add hrk-1998/ai-agent-team`
+
+Manual install (no marketplace):
+
+1. Validate: `claude plugin validate .`
+2. Test one session: `claude --plugin-dir .`, then `/ai-agent-team:team-workflow`
 3. Install for you, every project: copy this folder to `~/.claude/skills/ai-agent-team/`
    (any folder there with `.claude-plugin/plugin.json` auto-loads every session).
    Then `/reload-plugins` in the session.

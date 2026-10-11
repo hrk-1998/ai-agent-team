@@ -1,6 +1,6 @@
 # AI Agent Team — Plugin Index (v7, auto-routing via dis-on/dis-off, session-model default, contract schema)
 
-Plugin staged root: `D:\AI AGENT TEAM\staged-team\` then copy to `~/.claude/skills/ai-agent-team/` (auto-loads every session) or `<project>/.claude/skills/ai-agent-team/` (one repo). Then `/reload-plugins`.
+Plugin root: this repo (`D:\AI AGENT TEAM\DIT`). Install: copy to `~/.claude/skills/ai-agent-team/` (auto-loads every session) or `<project>/.claude/skills/ai-agent-team/` (one repo). Then `/reload-plugins`. Marketplace: `.claude-plugin/marketplace.json` (add repo as `hrk-1998/ai-agent-team`).
 
 ## Orchestrators (7)
 
@@ -51,4 +51,4 @@ sub-env-gate is blocking before any build work: Python vs lib compat with live-s
 
 ## Builds
 
-Staged root `D:\AI AGENT TEAM\staged-team\` — copy to skills dir as above. Do not add `agents/` to `~/.claude/agents/` separately; the plugin already carries them.
+Repo root is the plugin — copy to skills dir as above. Do not add `agents/` to `~/.claude/agents/` separately; the plugin already carries them.

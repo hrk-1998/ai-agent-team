@@ -2,7 +2,7 @@
 
 Project: AI SUB AGENT TEAM — commercial name **DIT = Dark Intelligence Team (تیم هوش سیاه)**
 Root (source of truth): `D:\AI AGENT TEAM\DIT`   ← work here
-`D:\AI AGENT TEAM\staged-team` is the stale v7 copy — do not edit it.
+(stale v7 copy `staged-team/` was deleted 2026-10-11 — verified unreferenced in git and not load-bearing for the live install)
 
 ## State (2026-10-11)
 
@@ -30,9 +30,9 @@ Root (source of truth): `D:\AI AGENT TEAM\DIT`   ← work here
 
 ## Open decisions (user has not picked)
 
-1. staged-team/ stale — delete or sync?
-2. No git remote — set one and push?
-3. Plugin release path (packaging/marketplace entry) — the known gap from the audit.
+1. ~~staged-team/ stale — delete or sync?~~ → DELETED 2026-10-11.
+2. ~~No git remote — set one and push?~~ → DONE 2026-10-11 (see git remote -v).
+3. Plugin release path — DONE 2026-10-11: `.claude-plugin/marketplace.json` added; push + `claude plugin marketplace add hrk-1998/ai-agent-team`.
 
 ## Bootstrap for the new session (paste this)
 

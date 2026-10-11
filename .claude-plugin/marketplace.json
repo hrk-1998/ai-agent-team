@@ -1,0 +1,17 @@
+{
+  "$schema": "https://anthropic.com/claude-code/marketplace.schema.json",
+  "name": "dit",
+  "description": "DIT — Dark Intelligence Team: hierarchical subagent team for Claude Code. Master orchestrator, 6 unified department leads, 88 subs, contracts, gates, evidence. Persian-friendly owner edge.",
+  "owner": {
+    "name": "hrk-1998",
+    "url": "https://github.com/hrk-1998"
+  },
+  "plugins": [
+    {
+      "name": "ai-agent-team",
+      "source": "./",
+      "description": "Hierarchical subagent team: master orchestrator, 6 dept leads, 88 subs, contracts, gates, evidence. /ai-agent-team:dis-on routes every message; team-workflow and e2e-workflow drive MVP-to-v2 gated delivery.",
+      "category": "workflow"
+    }
+  ]
+}

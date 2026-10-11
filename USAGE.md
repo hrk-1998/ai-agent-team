@@ -18,11 +18,11 @@ FA: یک تیم از متخصصان هوش مصنوعی داخل کلود کد. 
 
 ## Install / نصب
 
-EN: copy the `staged-team` folder to `~/.claude/skills/ai-agent-team/`
+EN: copy the plugin folder (the repo root) to `~/.claude/skills/ai-agent-team/`
 (user scope, every project) or to `<project>/.claude/skills/ai-agent-team/`
 (one project only). Then run `/reload-plugins`.
 
-FA: پوشهٔ `staged-team` را به `~/.claude/skills/ai-agent-team/` (همهٔ
+FA: پوشهٔ پلاگین (ریشهٔ همین مخزن) را به `~/.claude/skills/ai-agent-team/` (همهٔ
 پروژه‌ها) یا `<پروژه>/.claude/skills/ai-agent-team/` (فقط یک پروژه) کپی
 کنید. بعد دستور `/reload-plugins` را بزنید.
 
