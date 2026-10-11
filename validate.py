@@ -36,7 +36,15 @@ DEPT_LEADS = {
 }
 MASTER = "master-orchestrator"
 VALID_MODELS = {"fable", "sonnet", "opus", "haiku", "inherit"}
+VALID_EFFORTS = {"low", "medium", "high", "xhigh", "max"}
+# Any full model id (claude-opus-5-5, claude-haiku-4-5-20251001, ...) passes through
+# so a model newer than this table is still assignable to a department.
+MODEL_ID_RE = re.compile(r"^claude-[a-z0-9][a-z0-9.-]*$")
 REQUIRED_SKILLS = ["team-workflow", "dis-on", "dis-off", "mindmap", "project-handoff"]
+
+
+def ok_model(value: str) -> bool:
+    return value in VALID_MODELS or bool(MODEL_ID_RE.match(value))
 
 errors: list[str] = []
 warnings: list[str] = []
@@ -123,18 +131,18 @@ for path in agent_files:
     if expected == MASTER or expected in DEPT_LEADS.values():
         if model is None:
             local_errors.append("lead/master has no model field")
-        elif model not in VALID_MODELS:
+        elif not ok_model(model):
             local_errors.append(f"invalid model '{model}'")
         elif model != "inherit":
             # leads may override, but a hardcoded old alias was already cleared
             warn(f"{rel}: lead uses explicit model '{model}' (inherit = session default)")
-        if effort is not None and effort not in ("low", "medium", "high"):
+        if effort is not None and effort not in VALID_EFFORTS:
             local_errors.append(f"invalid effort '{effort}'")
     else:
         if model is not None:
             local_errors.append(f"sub carries model '{model}'; subs must inherit the lead")
-        if effort is not None:
-            local_errors.append(f"sub carries effort '{effort}'; subs must inherit the lead")
+        if effort is not None and effort not in VALID_EFFORTS:
+            local_errors.append(f"invalid effort '{effort}'")
     if expected == MASTER and model != "inherit":
         local_errors.append("master must use model: inherit")
     errors.extend(local_errors)
@@ -231,8 +239,18 @@ else:
         for dept in DEPTS:
             if dept not in dept_data:
                 err(f"departments.json missing key '{dept}'")
-        if dept_data.get(MASTER) is not None:
-            warn("master not null; session-model default overridden")
+        for key, val in dept_data.items():
+            if key == MASTER:
+                if val is not None:
+                    warn("master not null; session-model default overridden")
+                continue
+            if val is None:
+                continue
+            if not isinstance(val, dict) or not ok_model(str(val.get("model", ""))) or str(val.get("effort", "")) not in VALID_EFFORTS:
+                err(f"departments.json key '{key}': expected null or {{model, effort}}, got {val!r}")
+        for dept in DEPTS:
+            if isinstance(dept_data.get(dept), dict):
+                warn(f"dept '{dept}' overrides session model: {dept_data[dept]['model']} / {dept_data[dept]['effort']}")
 
 # 9: workflow sub references
 for wf in sorted(WORKFLOWS_DIR.glob("*.md")):

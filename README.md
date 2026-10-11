@@ -45,20 +45,30 @@ Full bilingual guide: USAGE.md. Contract schema: contracts/task-contract.md.
 ```text
 /ai-agent-team:pro-model sonnet high
 /ai-agent-team:map-model default
-/ai-agent-team:eng-model haiku low
+/ai-agent-team:eng-model desktop xhigh
 /ai-agent-team:project-handoff
 ```
 
 Per-dept model skills: `master-model`, `pro-model`, `map-model`, `eng-model`,
 `qa-model`, `rel-model`, `mem-model`. Bare call shows setting.
-`[model] [effort]` sets it. `default` resets to inherit master.
-Models: `fable|sonnet|opus|haiku`. Efforts: `low|medium|high`.
+`[model] [effort]` sets it for the lead AND every sub of that dept.
+`default` resets to the session model.
+
+Model input: whatever `/model` shows you, you can use —
+`desktop` or `inherit` (the session model: CLAUDE-DESKTOP, CLAUDE-DESKTOP 1M),
+`haiku` (CLAUDE-HAIKU-4.5), `sonnet`, `opus`, `fable`, or any full id
+(`claude-haiku-4-5-20251001`). A `claude-*` id is passed through verbatim,
+so models added later still work.
+
+Efforts: `low`, `medium`, `high`, `xhigh`, `max`.
 
 ## How it runs (spec notes)
 
 - NOT Agent Teams (experimental, one team/session, no nesting). Subagents + skills + hooks.
 - Master = main session via `team-workflow`. Leads/subs = subagent definitions via Task.
-- Null-depts inherit caller model at runtime (`model: inherit`).
+- Null-depts inherit the session model at runtime (`model: inherit`).
+  A set dept writes `{"model": ..., "effort": ...}` to `departments.json`
+  and into the lead + all its subs, so the whole dept runs on it.
 - Foreground only. Planning lead read-only until plan approved.
 - Guards in `hooks/hooks.json`: no `git add -A`/history rewrite, no real `.env` reads/writes.
 - Plugin auto-loads in every project once installed at user scope. No per-project setup.

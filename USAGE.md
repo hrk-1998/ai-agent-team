@@ -80,8 +80,22 @@ FA: دپارتمان ۱ حداکثر ۳ سؤال ساده می‌پرسد، یک
 | `/ai-agent-team:project-handoff` | ساخت فایل HANDOFF برای ادامهٔ کار |
 | `/ai-agent-team:mindmap` | نمودار گرافیکی ساختار تیم |
 
-Model names: fable, sonnet, opus, haiku. Effort: low, medium, high.
+Model input: whatever `/model` shows you, you can use —
+`desktop` or `inherit` (session model: CLAUDE-DESKTOP, CLAUDE-DESKTOP 1M),
+`haiku` (CLAUDE-HAIKU-4.5), `sonnet`, `opus`, `fable`, or any full id
+(`claude-haiku-4-5-20251001`; anything `claude-*` passes through verbatim).
+Efforts: `low`, `medium`, `high`, `xhigh`, `max`.
 `default` resets a department to inherit the session model.
+
+## Set a whole department / ست کردن کل دپارتمان
+
+EN: `/ai-agent-team:eng-model desktop xhigh` — Dept 3 Build (lead AND every
+sub) now runs on the session model with effort xhigh. Same form works for
+every department and every model in your list.
+
+FA: `/ai-agent-team:eng-model desktop xhigh` — از این پس دپارتمان ساخت
+(سرپرست و همهٔ ساب‌ها) روی مدل سشن فعلی با effort ایکس‌های اجرا می‌شود.
+همین شکل دستور برای همهٔ دپارتمان‌ها و همهٔ مدل‌های لیست شما کار می‌کند.
 
 ## Default model rule / قانون مدل پیش‌فرض
 

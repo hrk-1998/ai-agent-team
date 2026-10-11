@@ -5,18 +5,46 @@ description: "Show or set Dept 2 Planning model and effort. Usage: /map-model [m
 
 # Map Model Skill (Dept 2 Planning)
 
-Manages model and effort for Dept 2 Planning only. All 6 subs (planner, deps, ux, arch, visual-scout, foundation-keeper) follow automatically (`same-as-lead`).
+Manages model and effort for Dept 2 Planning only: `team-lead-planning` AND all
+its subs run on the same model + effort.
 
 ## Commands
 
 - `/map-model` — show current Dept 2 setting.
 - `/map-model [model] [effort]` — set Dept 2 model and effort.
-- `/map-model default` — reset Dept 2 to inherit master (`null` in json).
+- `/map-model default` — reset Dept 2 to the session model.
 
-Valid models: `fable`, `sonnet`, `opus`, `haiku`. Valid efforts: `low`, `medium`, `high`.
+## Model input (whatever `/model` shows you, you can use)
+
+Claude Code itself only accepts a fixed set of model identifiers, so this skill
+normalizes what you type. Use ANY of these:
+
+| You type | What is written (resolves to) |
+|---|---|
+| `desktop` | `inherit` — the model of THIS session (CLAUDE-DESKTOP, CLAUDE-DESKTOP 1M) |
+| `inherit` | `inherit` — same as `desktop` |
+| `haiku` | `haiku` — CLAUDE-HAIKU-4.5 |
+| `sonnet` | `sonnet` |
+| `opus` | `opus` |
+| `fable` | `fable` |
+| `claude-haiku-4-5-20251001` (any full id) | passed through verbatim |
+
+Anything matching `claude-*` is accepted as-is, so a model added to Claude Code
+after this skill was written still works. An unrecognized value is rejected
+with the valid list.
+
+Valid efforts: `low`, `medium`, `high`, `xhigh`, `max`.
 
 ## Execution Protocol
 
 1. READ `departments.json` key `planning` + `agents/team-lead-planning.md` frontmatter.
 2. No args: PRINT current model, effort, source (custom vs inherit).
-3. With args: validate, UPDATE json key `planning` + `model:`/`effort:` in `team-lead-planning.md`. Never edit subs. REPORT Persian simple: «مدل دپارتمان نقشه روی [مدل] با effort [ایفورت] تنظیم شد. هر ۶ ساب همگام شدند.»
+3. With args: normalize the model, validate the effort, then UPDATE
+   - json key `planning` → `{"model": "<resolved>", "effort": "<effort>"}`
+   - `model:` and `effort:` in `agents/team-lead-planning.md`
+   - `effort:` in **every** `agents/sub-*.md` of this dept (the Agent tool
+     cannot pass effort per call, so the subs must carry it).
+4. `default`: json key `planning` → `null`; delete the `model:` line and the
+   `effort:` line from the lead and from every sub of this dept.
+5. REPORT Persian simple:
+   «مدل دپارتمان نقشه روی [مدل] با effort [ایفورت] تنظیم شد. سرپرست و همهٔ ساب‌ها همگام شدند.»

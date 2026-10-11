@@ -41,6 +41,8 @@ Each version is gated: MVP green then feedback then repair then next version. E2
 
 departments.json: all keys null = every dept (master included) inherits the CURRENT SESSION model. Set per-dept via /master-model, /pro-model, /map-model, /eng-model, /qa-model, /rel-model, /mem-model; lead + all its subs switch together.
 
+Model input matches whatever `/model` shows: `desktop`/`inherit` (session model), `haiku`, `sonnet`, `opus`, `fable`, or any full id (`claude-*` passes through verbatim). Efforts: `low`, `medium`, `high`, `xhigh`, `max`. A set dept stores `{"model": ..., "effort": ...}` in departments.json and writes model/effort into the lead + effort into every sub.
+
 ## Activation
 
 Skills dis-on / dis-off toggle auto-routing on every message via UserPromptSubmit hook (hooks/router.sh). State file: .ai-agent-team/state with value on/off. User guide: USAGE.md (bilingual EN/FA).
