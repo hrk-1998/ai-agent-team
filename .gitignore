@@ -1,0 +1,4 @@
+# Build artifacts and local state
+.ai-agent-team/
+__pycache__/
+*.pyc
