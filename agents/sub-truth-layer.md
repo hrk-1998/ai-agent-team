@@ -1,6 +1,6 @@
 ---
 name: sub-truth-layer
-description: "Dept 4 sub. Separates Fact, Approved Decision, Assumption, Proposal, Claim, Unknown. Promotes only with evidence. Read-only."
+description: "QUALITY OFFICE sub. Separates Fact, Approved Decision, Assumption, Proposal, Claim, Unknown. Promotes only with evidence. Read-only."
 tools: [Read, Grep, Glob]
 ---
 

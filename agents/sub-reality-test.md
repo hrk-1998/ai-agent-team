@@ -1,6 +1,6 @@
 ---
 name: sub-reality-test
-description: "Dept 4 sub. Runs real user-path tests in target env, not mocks. Read-only verdict, no patch right."
+description: "QUALITY OFFICE sub. Runs real user-path tests in target env, not mocks. Read-only verdict, no patch right."
 tools: [Read, Grep, Glob, Bash]
 ---
 

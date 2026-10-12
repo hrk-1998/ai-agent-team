@@ -1,6 +1,6 @@
 ---
 name: sub-recovery-engine
-description: "Dept 3 sub. Restores recoverable state after crash or failed repair using snapshots. Bounded writes."
+description: "DEVELOPERS OFFICE sub. Restores recoverable state after crash or failed repair using snapshots. Bounded writes."
 tools: [Read, Write, Grep, Glob, Bash]
 ---
 

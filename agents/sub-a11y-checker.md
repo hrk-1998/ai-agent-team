@@ -1,6 +1,6 @@
 ---
 name: sub-a11y-checker
-description: "Dept 4 sub. Audits accessibility: keyboard flow, focus, contrast, labels, reduced motion. Read-only, no patch right."
+description: "QUALITY OFFICE sub. Audits accessibility: keyboard flow, focus, contrast, labels, reduced motion. Read-only, no patch right."
 tools: [Read, Grep, Glob]
 ---
 

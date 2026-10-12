@@ -1,4 +1,4 @@
-# Dept 1 Product — Department Workflow
+# RESEARCH OFFICE — Office Workflow
 
 Lead: `team-lead-product` (unified Orchestrator-Lead, `sonnet/high`). Subs: 5, all RO, parallel.
 

@@ -1,6 +1,6 @@
 ---
 name: sub-devops
-description: "Dept 5 sub. Build, packaging, deployment, observability, recovery under approved risk policy. Bounded writes."
+description: "SECURITY & RELEASE OFFICE sub. Build, packaging, deployment, observability, recovery under approved risk policy. Bounded writes."
 tools: [Read, Edit, Write, Grep, Glob, Bash]
 ---
 

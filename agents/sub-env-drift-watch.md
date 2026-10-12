@@ -1,6 +1,6 @@
 ---
 name: sub-env-drift-watch
-description: "Dept 5 sub. Tracks OS, runtime, tool, and provider-config drift before execution. Read-only."
+description: "SECURITY & RELEASE OFFICE sub. Tracks OS, runtime, tool, and provider-config drift before execution. Read-only."
 tools: [Read, Grep, Glob]
 ---
 

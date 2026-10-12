@@ -1,6 +1,6 @@
 ---
 name: sub-model-failure-memory
-description: "Dept 2 sub. Records per-model failure history to guide future routing. Scoped log writes only."
+description: "PLANNING OFFICE sub. Records per-model failure history to guide future routing. Scoped log writes only."
 tools: [Read, Write, Grep, Glob]
 ---
 

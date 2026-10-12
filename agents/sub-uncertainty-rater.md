@@ -1,6 +1,6 @@
 ---
 name: sub-uncertainty-rater
-description: "Dept 1 sub. Rates uncertainty explicitly from evidence, source quality, contradiction, verification strength. Never invents confidence numbers. Read-only."
+description: "RESEARCH OFFICE sub. Rates uncertainty explicitly from evidence, source quality, contradiction, verification strength. Never invents confidence numbers. Read-only."
 tools: [Read, Grep, Glob]
 ---
 

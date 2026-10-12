@@ -9,12 +9,12 @@ Whenever a map or structure is requested, write a standalone RTL HTML file and s
 
 ## Required layout (agreed graphic rules)
 
-1. Pyramid top-down: Layer 0 owner → Layer 1 master → Layer 2 dept cards.
-2. Each dept card: title + model tag + sub list (name + one-line role) + output doc + gate pill.
+1. Pyramid top-down: Layer 0 owner → Layer 1 COMMAND OFFICE (master-orchestrator) → Layer 2 office cards.
+2. Each office card: office name (RESEARCH / PLANNING / DEVELOPERS / QUALITY / SECURITY & RELEASE / MEMORY OFFICE) + model tag + sub list (name + one-line role) + output doc + gate pill. User sees office names only — never `team-lead-*` ids, never "Dept N".
 3. Legend row on top: solid blue line = direct flow, dashed red = error loop, dashed green = live watch, RO/RW/mode tags.
 4. SVG connectors between layers (real lines, not implied).
 5. Relation matrix table: sender → receiver, line type, allowed/forbidden + one-line why.
-6. Dark theme (`#090d16` bg, `#131b2e` cards), Vazirmatn font, color per dept, responsive grid.
+6. Dark theme (`#090d16` bg, `#131b2e` cards), Vazirmatn font, color per office, responsive grid. Office titles: اتاق تحقیق و کشف / اتاق برنامه‌ریزی و نقشه‌کشی / اتاق برنامه‌نویسی / اتاق کنترل کیفیت / اتاق امنیت و انتشار / اتاق حافظه و دانش, header: اتاق فرماندهی.
 7. Human language: Persian simple for owner-facing parts; EN only inside machine contract examples.
 
 ## Workflow

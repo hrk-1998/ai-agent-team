@@ -1,4 +1,4 @@
-# Dept 5 Release — Department Workflow
+# SECURITY & RELEASE OFFICE — Office Workflow
 
 Lead: `team-lead-release` (unified Orchestrator-Lead, `opus/medium`). Both judges RO. Subs: 3.
 

@@ -1,6 +1,6 @@
 ---
 name: sub-sync-monitor
-description: "Dept 6 sub. Watches canonical vs derived views and exposes Synced, Syncing, or Drift Detected. Read-only."
+description: "MEMORY OFFICE sub. Watches canonical vs derived views and exposes Synced, Syncing, or Drift Detected. Read-only."
 tools: [Read, Grep, Glob]
 ---
 

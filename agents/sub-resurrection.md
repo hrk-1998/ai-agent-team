@@ -1,6 +1,6 @@
 ---
 name: sub-resurrection
-description: "Dept 6 sub. Revives stale projects from last verified state with smallest next action. Scoped summary writes only."
+description: "MEMORY OFFICE sub. Revives stale projects from last verified state with smallest next action. Scoped summary writes only."
 tools: [Read, Write, Grep, Glob]
 ---
 

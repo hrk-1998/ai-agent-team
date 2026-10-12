@@ -1,6 +1,6 @@
 ---
 name: sub-canonical-check
-description: "Dept 6 sub. Reconciles Git, task state, evidence, ledger, and canonical model on disagreement. Scoped state writes only."
+description: "MEMORY OFFICE sub. Reconciles Git, task state, evidence, ledger, and canonical model on disagreement. Scoped state writes only."
 tools: [Read, Write, Grep, Glob]
 ---
 

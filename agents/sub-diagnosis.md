@@ -1,6 +1,6 @@
 ---
 name: sub-diagnosis
-description: "Dept 4 sub. Classifies failures and forms evidence-backed root-cause hypotheses. Read-only, no patch."
+description: "QUALITY OFFICE sub. Classifies failures and forms evidence-backed root-cause hypotheses. Read-only, no patch."
 tools: [Read, Grep, Glob, Bash]
 ---
 

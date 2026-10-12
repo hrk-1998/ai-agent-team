@@ -1,6 +1,6 @@
 ---
 name: sub-sec-judge
-description: "Dept 5 sub. Reviews security requirements and critical attack paths. Read-only, no patch right."
+description: "SECURITY & RELEASE OFFICE sub. Reviews security requirements and critical attack paths. Read-only, no patch right."
 tools: [Read, Grep, Glob]
 ---
 

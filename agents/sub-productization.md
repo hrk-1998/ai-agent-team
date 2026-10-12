@@ -1,6 +1,6 @@
 ---
 name: sub-productization
-description: "Dept 1 sub. Defines MVP scope max 3 features plus NOT list, differentiation, commercial readiness. Read-only."
+description: "RESEARCH OFFICE sub. Defines MVP scope max 3 features plus NOT list, differentiation, commercial readiness. Read-only."
 tools: [Read, Grep, Glob]
 ---
 

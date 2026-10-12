@@ -1,18 +1,18 @@
 ---
 name: rel-model
-description: "Show or set Dept 5 Release model and effort. Usage: /rel-model [model] [effort]"
+description: "Show or set SECURITY & RELEASE OFFICE model and effort. Usage: /rel-model [model] [effort]"
 ---
 
-# Rel Model Skill (Dept 5 Release)
+# Rel Model Skill (SECURITY & RELEASE OFFICE)
 
-Manages model and effort for Dept 5 Release only: `team-lead-release` AND all
+Manages model and effort for SECURITY & RELEASE OFFICE only: `team-lead-release` AND all
 its subs run on the same model + effort.
 
 ## Commands
 
-- `/rel-model` — show current Dept 5 setting.
-- `/rel-model [model] [effort]` — set Dept 5 model and effort.
-- `/rel-model default` — reset Dept 5 to the session model.
+- `/rel-model` — show current SECURITY & RELEASE OFFICE setting.
+- `/rel-model [model] [effort]` — set SECURITY & RELEASE OFFICE model and effort.
+- `/rel-model default` — reset SECURITY & RELEASE OFFICE to the session model.
 
 ## Model input (whatever `/model` shows you, you can use)
 
@@ -42,9 +42,9 @@ Valid efforts: `low`, `medium`, `high`, `xhigh`, `max`.
 3. With args: normalize the model, validate the effort, then UPDATE
    - json key `release` → `{"model": "<resolved>", "effort": "<effort>"}`
    - `model:` and `effort:` in `agents/team-lead-release.md`
-   - `effort:` in **every** `agents/sub-*.md` of this dept (the Agent tool
+   - `effort:` in **every** `agents/sub-*.md` of this office (the Agent tool
      cannot pass effort per call, so the subs must carry it).
 4. `default`: json key `release` → `null`; delete the `model:` line and the
-   `effort:` line from the lead and from every sub of this dept.
+   `effort:` line from the lead and from every sub of this office.
 5. REPORT Persian simple:
-   «مدل دپارتمان انتشار روی [مدل] با effort [ایفورت] تنظیم شد. سرپرست و همهٔ ساب‌ها همگام شدند.»
+   «مدل اتاق امنیت و انتشار روی [مدل] با effort [ایفورت] تنظیم شد. سرپرست و همهٔ ساب‌ها همگام شدند.»

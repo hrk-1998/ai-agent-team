@@ -1,6 +1,6 @@
 ---
 name: sub-memory-poison-guard
-description: "Dept 6 sub. Validates memory records carry source, time, scope, status, evidence before promotion. Read-only."
+description: "MEMORY OFFICE sub. Validates memory records carry source, time, scope, status, evidence before promotion. Read-only."
 tools: [Read, Grep, Glob]
 ---
 

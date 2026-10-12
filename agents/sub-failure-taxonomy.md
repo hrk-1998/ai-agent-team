@@ -1,6 +1,6 @@
 ---
 name: sub-failure-taxonomy
-description: "Dept 4 sub. Classifies failures into change, baseline, environment, or flake with rerun proof. Read-only."
+description: "QUALITY OFFICE sub. Classifies failures into change, baseline, environment, or flake with rerun proof. Read-only."
 tools: [Read, Grep, Glob, Bash]
 ---
 

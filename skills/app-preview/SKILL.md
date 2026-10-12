@@ -5,7 +5,7 @@ description: "Build the app, boot it, and open it in the session browser pane. U
 
 # App Preview Skill (Build → Run → Show)
 
-Turns DIT into an AI app builder: after Dept 3 has built (or Dept 2 approved a
+Turns DIT into an AI app builder: after DEVELOPERS OFFICE has built (or PLANNING OFFICE approved a
 plan), this skill RUNS the app and SHOWS it to the owner in the browser pane.
 
 This is the ONLY place the app is shown to the owner: browser panes live in

@@ -1,4 +1,4 @@
-# Dept 6 Memory — Department Workflow
+# MEMORY OFFICE — Office Workflow
 
 Lead: `team-lead-memory` (unified Orchestrator-Lead, inherits master). Command `/project-handoff`. Subs: 3.
 

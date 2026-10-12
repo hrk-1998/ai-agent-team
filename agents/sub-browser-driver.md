@@ -1,6 +1,6 @@
 ---
 name: sub-browser-driver
-description: "Dept 4 sub. Drives the running app through a real browser via CLI, clicks the core journey, reads console errors, captures screenshots. Read-only verdict."
+description: "QUALITY OFFICE sub. Drives the running app through a real browser via CLI, clicks the core journey, reads console errors, captures screenshots. Read-only verdict."
 tools: [Read, Grep, Glob, Bash]
 ---
 

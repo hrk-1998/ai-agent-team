@@ -1,6 +1,6 @@
 ---
 name: sub-momentum-watch
-description: "Dept 6 sub. Detects busy-but-stalled work: high activity with zero verified delta triggers diagnosis. Read-only."
+description: "MEMORY OFFICE sub. Detects busy-but-stalled work: high activity with zero verified delta triggers diagnosis. Read-only."
 tools: [Read, Grep, Glob]
 ---
 

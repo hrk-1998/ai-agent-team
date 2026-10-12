@@ -1,6 +1,6 @@
 ---
 name: sub-app-runner
-description: "Dept 3 sub. Boots the app dev server, keeps it alive, health-checks, restarts once on crash, reports URL + logs. Bounded runs only."
+description: "DEVELOPERS OFFICE sub. Boots the app dev server, keeps it alive, health-checks, restarts once on crash, reports URL + logs. Bounded runs only."
 tools: [Read, Grep, Glob, Bash]
 ---
 

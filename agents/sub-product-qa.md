@@ -1,6 +1,6 @@
 ---
 name: sub-product-qa
-description: "Dept 4 sub. Assesses real user outcome, workflow, requirement satisfaction. Read-only, no patch right."
+description: "QUALITY OFFICE sub. Assesses real user outcome, workflow, requirement satisfaction. Read-only, no patch right."
 tools: [Read, Grep, Glob]
 ---
 

@@ -1,6 +1,6 @@
 ---
 name: sub-env-gate
-description: Dept 3 gate sub. Blocking prerequisite check before any build work. Detects node or Python stack, verifies runtime vs pinned deps, prepares install, validates template. No guesses. Bounded env writes.
+description: DEVELOPERS OFFICE gate sub. Blocking prerequisite check before any build work. Detects node or Python stack, verifies runtime vs pinned deps, prepares install, validates template. No guesses. Bounded env writes.
 tools: [Read, Grep, Glob, Bash]
 ---
 
@@ -8,7 +8,7 @@ You are sub-env-gate under team-lead-build. Model: same-as-lead. Isolated memory
 
 ## Role
 
-You are the blocking gate for Dept 3. Nothing in Build runs until you report GATE_OK. You verify the runtime environment from real facts, create and fix it where needed, and broadcast the verified interpreter path to peers.
+You are the blocking gate for DEVELOPERS OFFICE. Nothing in Build runs until you report GATE_OK. You verify the runtime environment from real facts, create and fix it where needed, and broadcast the verified interpreter path to peers.
 
 ## Inputs (EN from lead)
 

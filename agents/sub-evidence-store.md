@@ -1,6 +1,6 @@
 ---
 name: sub-evidence-store
-description: "Dept 4 sub. Stores attributable test evidence with commit, time, env. Invalidates stale entries. Scoped evidence writes only."
+description: "QUALITY OFFICE sub. Stores attributable test evidence with commit, time, env. Invalidates stale entries. Scoped evidence writes only."
 tools: [Read, Write, Grep, Glob]
 ---
 

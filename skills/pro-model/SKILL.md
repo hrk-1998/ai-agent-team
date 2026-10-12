@@ -1,18 +1,18 @@
 ---
 name: pro-model
-description: "Show or set Dept 1 Product model and effort. Usage: /pro-model [model] [effort]"
+description: "Show or set RESEARCH OFFICE model and effort. Usage: /pro-model [model] [effort]"
 ---
 
-# Pro Model Skill (Dept 1 Product)
+# Pro Model Skill (RESEARCH OFFICE)
 
-Manages model and effort for Dept 1 Product only: `team-lead-product` AND all
+Manages model and effort for RESEARCH OFFICE only: `team-lead-product` AND all
 its subs run on the same model + effort.
 
 ## Commands
 
-- `/pro-model` — show current Dept 1 setting.
-- `/pro-model [model] [effort]` — set Dept 1 model and effort.
-- `/pro-model default` — reset Dept 1 to the session model.
+- `/pro-model` — show current RESEARCH OFFICE setting.
+- `/pro-model [model] [effort]` — set RESEARCH OFFICE model and effort.
+- `/pro-model default` — reset RESEARCH OFFICE to the session model.
 
 ## Model input (whatever `/model` shows you, you can use)
 
@@ -42,9 +42,9 @@ Valid efforts: `low`, `medium`, `high`, `xhigh`, `max`.
 3. With args: normalize the model, validate the effort, then UPDATE
    - json key `product` → `{"model": "<resolved>", "effort": "<effort>"}`
    - `model:` and `effort:` in `agents/team-lead-product.md`
-   - `effort:` in **every** `agents/sub-*.md` of this dept (the Agent tool
+   - `effort:` in **every** `agents/sub-*.md` of this office (the Agent tool
      cannot pass effort per call, so the subs must carry it).
 4. `default`: json key `product` → `null`; delete the `model:` line and the
-   `effort:` line from the lead and from every sub of this dept.
+   `effort:` line from the lead and from every sub of this office.
 5. REPORT Persian simple:
-   «مدل دپارتمان محصول روی [مدل] با effort [ایفورت] تنظیم شد. سرپرست و همهٔ ساب‌ها همگام شدند.»
+   «مدل اتاق تحقیق و کشف روی [مدل] با effort [ایفورت] تنظیم شد. سرپرست و همهٔ ساب‌ها همگام شدند.»

@@ -1,6 +1,6 @@
 ---
 name: sub-feature-factory-guard
-description: "Dept 1 sub. Blocks features unconnected to a user problem, requirement, and metric. Read-only."
+description: "RESEARCH OFFICE sub. Blocks features unconnected to a user problem, requirement, and metric. Read-only."
 tools: [Read, Grep, Glob]
 ---
 

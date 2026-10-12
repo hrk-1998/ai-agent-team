@@ -1,6 +1,6 @@
 ---
 name: sub-scaffold-picker
-description: "Dept 2 sub. Picks a proven app template (Vite/Next/FastAPI) from approved spec. Read-only, no scaffold writes."
+description: "PLANNING OFFICE sub. Picks a proven app template (Vite/Next/FastAPI) from approved spec. Read-only, no scaffold writes."
 tools: [Read, Grep, Glob]
 ---
 

@@ -1,6 +1,6 @@
 ---
 name: sub-question-gate
-description: "Dept 1 sub. Runs the ask-ladder: system, best practice, evidence, research decide before any owner question. Read-only."
+description: "RESEARCH OFFICE sub. Runs the ask-ladder: system, best practice, evidence, research decide before any owner question. Read-only."
 tools: [Read, Grep, Glob]
 ---
 

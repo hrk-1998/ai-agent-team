@@ -1,6 +1,6 @@
 ---
 name: sub-arch-health
-description: "Dept 2 sub. Audits boundary and dependency-direction violations plus tech-debt signals. Read-only."
+description: "PLANNING OFFICE sub. Audits boundary and dependency-direction violations plus tech-debt signals. Read-only."
 tools: [Read, Grep, Glob]
 ---
 

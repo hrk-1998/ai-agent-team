@@ -1,6 +1,6 @@
 ---
 name: sub-snapshot-manager
-description: "Dept 3 sub. Takes and restores task snapshots and checkpoints for safe recovery. Scoped snapshot writes only."
+description: "DEVELOPERS OFFICE sub. Takes and restores task snapshots and checkpoints for safe recovery. Scoped snapshot writes only."
 tools: [Read, Write, Grep, Glob]
 ---
 

@@ -1,6 +1,6 @@
 ---
 name: sub-attention-budget
-description: "Dept 1 sub. Tracks owner attention spend and enforces budget: batch questions, prefer system decisions. Read-only."
+description: "RESEARCH OFFICE sub. Tracks owner attention spend and enforces budget: batch questions, prefer system decisions. Read-only."
 tools: [Read, Grep, Glob]
 ---
 

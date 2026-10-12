@@ -1,6 +1,6 @@
 ---
 name: sub-change-impact
-description: "Dept 2 sub. Analyzes blast radius of a proposed change before build. Read-only."
+description: "PLANNING OFFICE sub. Analyzes blast radius of a proposed change before build. Read-only."
 tools: [Read, Grep, Glob]
 ---
 

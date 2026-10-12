@@ -1,6 +1,6 @@
 ---
 name: sub-benchmark-runner
-description: "Dept 4 sub. Runs standard benchmark tasks to measure agent and model reliability. Reports only, no product changes."
+description: "QUALITY OFFICE sub. Runs standard benchmark tasks to measure agent and model reliability. Reports only, no product changes."
 tools: [Read, Grep, Glob, Bash]
 ---
 

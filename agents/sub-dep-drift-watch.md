@@ -1,6 +1,6 @@
 ---
 name: sub-dep-drift-watch
-description: "Dept 5 sub. Tracks dependency and environment drift: versions, breaking changes, health, config. Read-only."
+description: "SECURITY & RELEASE OFFICE sub. Tracks dependency and environment drift: versions, breaking changes, health, config. Read-only."
 tools: [Read, Grep, Glob]
 ---
 

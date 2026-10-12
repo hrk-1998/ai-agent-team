@@ -1,4 +1,4 @@
-# Dept 2 Planning — Department Workflow
+# PLANNING OFFICE — Office Workflow
 
 Lead: `team-lead-planning` (unified Orchestrator-Lead, inherits master). Mode: Plan Mode (RO, except keeper). Subs: 6.
 

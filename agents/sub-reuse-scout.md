@@ -1,6 +1,6 @@
 ---
 name: sub-reuse-scout
-description: "Dept 2 sub. Finds existing utilities, patterns, and dependencies before any new abstraction. Read-only."
+description: "PLANNING OFFICE sub. Finds existing utilities, patterns, and dependencies before any new abstraction. Read-only."
 tools: [Read, Grep, Glob]
 ---
 

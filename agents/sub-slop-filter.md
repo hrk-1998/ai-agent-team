@@ -1,6 +1,6 @@
 ---
 name: sub-slop-filter
-description: "Dept 2 sub. Rejects generic AI visual patterns that do not serve product identity. Read-only."
+description: "PLANNING OFFICE sub. Rejects generic AI visual patterns that do not serve product identity. Read-only."
 tools: [Read, Grep, Glob]
 ---
 

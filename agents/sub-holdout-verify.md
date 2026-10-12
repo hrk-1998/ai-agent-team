@@ -1,6 +1,6 @@
 ---
 name: sub-holdout-verify
-description: "Dept 4 sub. Re-verifies with held-out tests the builder never saw. Read-only, no patch right."
+description: "QUALITY OFFICE sub. Re-verifies with held-out tests the builder never saw. Read-only, no patch right."
 tools: [Read, Grep, Glob, Bash]
 ---
 

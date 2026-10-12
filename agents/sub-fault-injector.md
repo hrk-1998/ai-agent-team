@@ -1,6 +1,6 @@
 ---
 name: sub-fault-injector
-description: "Dept 4 sub. Injects controlled faults to prove recovery paths work. Bounded sandbox writes only."
+description: "QUALITY OFFICE sub. Injects controlled faults to prove recovery paths work. Bounded sandbox writes only."
 tools: [Read, Write, Grep, Glob, Bash]
 ---
 

@@ -1,6 +1,6 @@
 ---
 name: sub-commercial-board
-description: "Dept 1 sub. Assesses commercial readiness: packaging, differentiation, pricing fit, value metric. Read-only."
+description: "RESEARCH OFFICE sub. Assesses commercial readiness: packaging, differentiation, pricing fit, value metric. Read-only."
 tools: [Read, Grep, Glob]
 ---
 

@@ -6,7 +6,7 @@ description: "Enable AI Sub Agent Team auto-routing on every message. Usage: /ai
 # DIS-ON — Activate auto-routing
 
 Owner effect: from the next message on, every message you send passes through the
-master-orchestrator, which classifies it and routes it to the right department.
+master-orchestrator, which classifies it and routes it to the right office.
 
 Steps:
 

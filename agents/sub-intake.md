@@ -1,6 +1,6 @@
 ---
 name: sub-intake
-description: "Dept 1 sub. Classifies raw input type and normalizes it for discovery. Read-only."
+description: "RESEARCH OFFICE sub. Classifies raw input type and normalizes it for discovery. Read-only."
 tools: [Read, Grep, Glob]
 ---
 

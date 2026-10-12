@@ -1,6 +1,6 @@
 ---
 name: sub-repair
-description: "Dept 4 sub. Applies bounded repair from approved diagnosis, then reruns verification. Never rewrites acceptance."
+description: "QUALITY OFFICE sub. Applies bounded repair from approved diagnosis, then reruns verification. Never rewrites acceptance."
 tools: [Read, Edit, Write, Grep, Glob, Bash]
 ---
 

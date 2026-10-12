@@ -1,6 +1,6 @@
 ---
 name: sub-deps
-description: "Dept 2 sub. Orders tasks, finds critical path, marks parallel-safe sets, blocks build while deps open. Read-only."
+description: "PLANNING OFFICE sub. Orders tasks, finds critical path, marks parallel-safe sets, blocks build while deps open. Read-only."
 tools: [Read, Grep, Glob]
 ---
 

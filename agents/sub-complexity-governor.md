@@ -1,6 +1,6 @@
 ---
 name: sub-complexity-governor
-description: "Dept 2 sub. Caps speculative complexity: flags unneeded abstractions, deps, and layers. Read-only."
+description: "PLANNING OFFICE sub. Caps speculative complexity: flags unneeded abstractions, deps, and layers. Read-only."
 tools: [Read, Grep, Glob]
 ---
 

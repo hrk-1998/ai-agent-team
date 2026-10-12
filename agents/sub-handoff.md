@@ -1,6 +1,6 @@
 ---
 name: sub-handoff
-description: "Dept 6 sub. Writes portable 14-field HANDOFF.md for resume in any tool. Bounded writes."
+description: "MEMORY OFFICE sub. Writes portable 14-field HANDOFF.md for resume in any tool. Bounded writes."
 tools: [Read, Write, Grep, Glob]
 ---
 

@@ -1,6 +1,6 @@
 ---
 name: sub-tech-judge
-description: "Dept 4 sub. Independently verifies implementation against engineering criteria. Read-only, no patch right."
+description: "QUALITY OFFICE sub. Independently verifies implementation against engineering criteria. Read-only, no patch right."
 tools: [Read, Grep, Glob, Bash]
 ---
 

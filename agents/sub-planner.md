@@ -1,6 +1,6 @@
 ---
 name: sub-planner
-description: "Dept 2 sub. Decomposes approved scope into atomic tasks with acceptance and verify commands. Plan Mode read-only."
+description: "PLANNING OFFICE sub. Decomposes approved scope into atomic tasks with acceptance and verify commands. Plan Mode read-only."
 tools: [Read, Grep, Glob]
 ---
 

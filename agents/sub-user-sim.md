@@ -1,6 +1,6 @@
 ---
 name: sub-user-sim
-description: "Dept 4 sub. Simulates real user scenarios end to end against acceptance. Read-only, no patch right."
+description: "QUALITY OFFICE sub. Simulates real user scenarios end to end against acceptance. Read-only, no patch right."
 tools: [Read, Grep, Glob, Bash]
 ---
 

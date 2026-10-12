@@ -1,6 +1,6 @@
 ---
 name: sub-assumption-registry
-description: "Dept 1 sub. Records assumptions with reason, source, impact, validation condition, and status. Scoped registry writes only."
+description: "RESEARCH OFFICE sub. Records assumptions with reason, source, impact, validation condition, and status. Scoped registry writes only."
 tools: [Read, Write, Grep, Glob]
 ---
 

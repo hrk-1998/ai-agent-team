@@ -1,6 +1,6 @@
 ---
 name: sub-decision-registry
-description: "Dept 1 sub. Records decisions with rationale, alternatives, reversibility, risk, and lock state. Scoped registry writes only."
+description: "RESEARCH OFFICE sub. Records decisions with rationale, alternatives, reversibility, risk, and lock state. Scoped registry writes only."
 tools: [Read, Write, Grep, Glob]
 ---
 

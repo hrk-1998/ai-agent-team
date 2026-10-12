@@ -1,6 +1,6 @@
 ---
 name: sub-observability
-description: "Dept 5 sub. Observes task state, tool calls, changes, tests, failures, repairs, commits, evidence, sync. Scoped log writes only."
+description: "SECURITY & RELEASE OFFICE sub. Observes task state, tool calls, changes, tests, failures, repairs, commits, evidence, sync. Scoped log writes only."
 tools: [Read, Write, Grep, Glob]
 ---
 

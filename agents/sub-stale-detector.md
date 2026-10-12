@@ -1,6 +1,6 @@
 ---
 name: sub-stale-detector
-description: "Dept 6 sub. Detects stale projects: inactivity, stale evidence, outdated deps and decisions, drift, unfinished work. Read-only."
+description: "MEMORY OFFICE sub. Detects stale projects: inactivity, stale evidence, outdated deps and decisions, drift, unfinished work. Read-only."
 tools: [Read, Grep, Glob]
 ---
 

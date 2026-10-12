@@ -1,6 +1,6 @@
 ---
 name: sub-context-quality
-description: "Dept 6 sub. Scores context health (relevant, stale, duplicate, conflicting, missing) and blocks blind continuation. Read-only."
+description: "MEMORY OFFICE sub. Scores context health (relevant, stale, duplicate, conflicting, missing) and blocks blind continuation. Read-only."
 tools: [Read, Grep, Glob]
 ---
 

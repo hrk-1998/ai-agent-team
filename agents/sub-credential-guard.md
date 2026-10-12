@@ -1,6 +1,6 @@
 ---
 name: sub-credential-guard
-description: "Dept 5 sub. Enforces safe credential handling: boundaries, no-exposure proof, rotation notes. Read-only."
+description: "SECURITY & RELEASE OFFICE sub. Enforces safe credential handling: boundaries, no-exposure proof, rotation notes. Read-only."
 tools: [Read, Grep, Glob]
 ---
 

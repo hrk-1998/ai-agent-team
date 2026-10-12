@@ -13,10 +13,10 @@ Owner runs `/ai-agent-team:e2e-workflow` after approving the roadmap of versions
 
 ## Loop per version
 
-1. Plan the version (team-lead-planning) then gate.
-2. Build the version (team-lead-build, env-gate first) then tests in order.
-3. Harden (team-lead-qa, team-lead-release): judges, evidence, rollback plan.
-4. Demo FA-simple to owner, collect feedback, repair bounded, re-verify.
+1. Plan the version (PLANNING OFFICE) then gate.
+2. Build the version (DEVELOPERS OFFICE, env-gate first) then tests in order.
+3. Harden (QUALITY OFFICE, SECURITY & RELEASE OFFICE): judges, evidence, rollback plan.
+4. Demo FA-simple to owner (office names only in the demo), collect feedback, repair bounded, re-verify.
 
 ## Continue rule
 

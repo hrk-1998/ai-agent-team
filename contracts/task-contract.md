@@ -3,9 +3,9 @@
 Rule: a contract is a written order. No contract = reject. Outside scope = abort.
 Three layers, not one. Never ask a sub to build a full 20-field contract.
 
-## Layer 1 — Master Contract (Master → Dept Lead): FULL 20 fields
+## Layer 1 — Master Contract (Master → Office Lead): FULL 20 fields
 
-Sent once per dept dispatch. Defines the whole department job.
+Sent once per office dispatch. Defines the whole office job.
 
 | # | Field | Required | Meaning |
 |---|-------|----------|---------|
@@ -16,7 +16,7 @@ Sent once per dept dispatch. Defines the whole department job.
 | 5 | objective | yes | WHY (goal, not task list) |
 | 6 | outcome | yes | concrete expected output |
 | 7 | verified-state | yes | what is already green (evidence) |
-| 8 | owner | yes | dept lead name |
+| 8 | owner | yes | office lead name |
 | 9 | scope | yes | allowed files/areas |
 | 10 | non-goals | yes | what must NOT be touched |
 | 11 | locked | yes | contract immutable after master locks it |

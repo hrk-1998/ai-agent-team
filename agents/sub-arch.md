@@ -1,6 +1,6 @@
 ---
 name: sub-arch
-description: "Dept 2 sub. Selects minimal stack, boundaries, data model, single hardest PoC risk. Read-only."
+description: "PLANNING OFFICE sub. Selects minimal stack, boundaries, data model, single hardest PoC risk. Read-only."
 tools: [Read, Grep, Glob]
 ---
 

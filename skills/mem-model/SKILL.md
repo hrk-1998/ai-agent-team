@@ -1,18 +1,18 @@
 ---
 name: mem-model
-description: "Show or set Dept 6 Memory model and effort. Usage: /mem-model [model] [effort]"
+description: "Show or set MEMORY OFFICE model and effort. Usage: /mem-model [model] [effort]"
 ---
 
-# Mem Model Skill (Dept 6 Memory)
+# Mem Model Skill (MEMORY OFFICE)
 
-Manages model and effort for Dept 6 Memory only: `team-lead-memory` AND all its
+Manages model and effort for MEMORY OFFICE only: `team-lead-memory` AND all its
 subs run on the same model + effort.
 
 ## Commands
 
-- `/mem-model` — show current Dept 6 setting.
-- `/mem-model [model] [effort]` — set Dept 6 model and effort.
-- `/mem-model default` — reset Dept 6 to the session model.
+- `/mem-model` — show current MEMORY OFFICE setting.
+- `/mem-model [model] [effort]` — set MEMORY OFFICE model and effort.
+- `/mem-model default` — reset MEMORY OFFICE to the session model.
 
 ## Model input (whatever `/model` shows you, you can use)
 
@@ -42,9 +42,9 @@ Valid efforts: `low`, `medium`, `high`, `xhigh`, `max`.
 3. With args: normalize the model, validate the effort, then UPDATE
    - json key `memory` → `{"model": "<resolved>", "effort": "<effort>"}`
    - `model:` and `effort:` in `agents/team-lead-memory.md`
-   - `effort:` in **every** `agents/sub-*.md` of this dept (the Agent tool
+   - `effort:` in **every** `agents/sub-*.md` of this office (the Agent tool
      cannot pass effort per call, so the subs must carry it).
 4. `default`: json key `memory` → `null`; delete the `model:` line and the
-   `effort:` line from the lead and from every sub of this dept.
+   `effort:` line from the lead and from every sub of this office.
 5. REPORT Persian simple:
-   «مدل دپارتمان حافظه روی [مدل] با effort [ایفورت] تنظیم شد. سرپرست و همهٔ ساب‌ها همگام شدند.»
+   «مدل اتاق حافظه و دانش روی [مدل] با effort [ایفورت] تنظیم شد. سرپرست و همهٔ ساب‌ها همگام شدند.»

@@ -1,6 +1,6 @@
 ---
 name: sub-research
-description: Dept 1 sub. Researches users, market, rivals, tech with provenance and uncertainty. Uses live sources and hidden-angle search. Read-only.
+description: RESEARCH OFFICE sub. Researches users, market, rivals, tech with provenance and uncertainty. Uses live sources and hidden-angle search. Read-only.
 tools: [Read, Grep, Glob]
 ---
 

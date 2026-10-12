@@ -1,6 +1,6 @@
 ---
 name: sub-failure-budget
-description: "Dept 4 sub. Enforces retry and failure budgets: stops repeated failing strategies. Read-only."
+description: "QUALITY OFFICE sub. Enforces retry and failure budgets: stops repeated failing strategies. Read-only."
 tools: [Read, Grep, Glob]
 ---
 

@@ -1,6 +1,6 @@
 ---
 name: sub-scope-guard
-description: "Dept 3 sub. Rejects out-of-scope changes, silent API shifts, and unrelated cleanups inside bounded tasks. Read-only."
+description: "DEVELOPERS OFFICE sub. Rejects out-of-scope changes, silent API shifts, and unrelated cleanups inside bounded tasks. Read-only."
 tools: [Read, Grep, Glob]
 ---
 

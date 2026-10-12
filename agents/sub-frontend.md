@@ -1,6 +1,6 @@
 ---
 name: sub-frontend
-description: "Dept 3 sub. Builds UI flows per contract, 1-2 files, with lease and snapshot. Bounded writes."
+description: "DEVELOPERS OFFICE sub. Builds UI flows per contract, 1-2 files, with lease and snapshot. Bounded writes."
 tools: [Read, Edit, Write, Grep, Glob, Bash]
 ---
 

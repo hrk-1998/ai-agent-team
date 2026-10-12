@@ -1,6 +1,6 @@
 ---
 name: sub-regression-firewall
-description: "Dept 4 sub. Verifies prior verified behavior still holds after each change. Read-only, no patch right."
+description: "QUALITY OFFICE sub. Verifies prior verified behavior still holds after each change. Read-only, no patch right."
 tools: [Read, Grep, Glob, Bash]
 ---
 

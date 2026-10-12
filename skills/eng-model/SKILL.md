@@ -1,19 +1,19 @@
 ---
 name: eng-model
-description: "Show or set Dept 3 Build model and effort. Usage: /eng-model [model] [effort]"
+description: "Show or set DEVELOPERS OFFICE model and effort. Usage: /eng-model [model] [effort]"
 ---
 
-# Eng Model Skill (Dept 3 Build)
+# Eng Model Skill (DEVELOPERS OFFICE)
 
-Manages model and effort for Dept 3 Build only: `team-lead-build` AND all its
+Manages model and effort for DEVELOPERS OFFICE only: `team-lead-build` AND all its
 subs (env-gate, frontend, backend, data, integration, snapshot, recovery, git,
 transaction, scope-guard, commit-gate) run on the same model + effort.
 
 ## Commands
 
-- `/eng-model` — show current Dept 3 setting.
-- `/eng-model [model] [effort]` — set Dept 3 model and effort.
-- `/eng-model default` — reset Dept 3 to the session model.
+- `/eng-model` — show current DEVELOPERS OFFICE setting.
+- `/eng-model [model] [effort]` — set DEVELOPERS OFFICE model and effort.
+- `/eng-model default` — reset DEVELOPERS OFFICE to the session model.
 
 ## Model input (whatever `/model` shows you, you can use)
 
@@ -43,9 +43,9 @@ Valid efforts: `low`, `medium`, `high`, `xhigh`, `max`.
 3. With args: normalize the model, validate the effort, then UPDATE
    - json key `build` → `{"model": "<resolved>", "effort": "<effort>"}`
    - `model:` and `effort:` in `agents/team-lead-build.md`
-   - `effort:` in **every** `agents/sub-*.md` of this dept (the Agent tool
+   - `effort:` in **every** `agents/sub-*.md` of this office (the Agent tool
      cannot pass effort per call, so the subs must carry it).
 4. `default`: json key `build` → `null`; delete the `model:` line and the
-   `effort:` line from the lead and from every sub of this dept.
+   `effort:` line from the lead and from every sub of this office.
 5. REPORT Persian simple:
-   «مدل دپارتمان ساخت روی [مدل] با effort [ایفورت] تنظیم شد. سرپرست و هر ۱۱ ساب همگام شدند.»
+   «مدل اتاق برنامه‌نویسی روی [مدل] با effort [ایفورت] تنظیم شد. سرپرست و هر ۱۱ ساب همگام شدند.»

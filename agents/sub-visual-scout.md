@@ -1,6 +1,6 @@
 ---
 name: sub-visual-scout
-description: "Dept 2 sub. Finds reference UI patterns with provenance, filters unsuitable, synthesizes direction. Read-only."
+description: "PLANNING OFFICE sub. Finds reference UI patterns with provenance, filters unsuitable, synthesizes direction. Read-only."
 tools: [Read, Grep, Glob]
 ---
 

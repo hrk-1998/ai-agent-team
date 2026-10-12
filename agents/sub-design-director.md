@@ -1,6 +1,6 @@
 ---
 name: sub-design-director
-description: "Dept 2 sub. Produces 2-3 design directions from research, runs selection, locks the system. Read-only."
+description: "PLANNING OFFICE sub. Produces 2-3 design directions from research, runs selection, locks the system. Read-only."
 tools: [Read, Grep, Glob]
 ---
 

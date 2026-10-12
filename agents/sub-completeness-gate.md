@@ -1,6 +1,6 @@
 ---
 name: sub-completeness-gate
-description: "Dept 1 sub. Checks product completeness and engineering definition-of-done checklists. Read-only."
+description: "RESEARCH OFFICE sub. Checks product completeness and engineering definition-of-done checklists. Read-only."
 tools: [Read, Grep, Glob]
 ---
 

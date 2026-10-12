@@ -12,7 +12,7 @@
 
 **FA:** اين حسابرسی پوششِ staged-team در برابر Problem.md را می‌سنجد: ۴۲ مسئله (P/S)، ده اصل، چرخهٔ هشت‌گامی شکست و پیامدهای بخش ۴. یافتهٔ کلیدی: اسکلت مالکیت برای بیشترِ P/S وجود دارد (sub-* و hook و skill)، اما شکاف‌های اجراییِ مکرر دیده می‌شود — مالک بدون قلابِ مسدودکننده، دامنهٔ writable پراکنده، و handoffهای تعریف‌نشده بین Detect→Learn و بین QA→Release. بدون بستنِ ده شکافِ اولویت‌دار، «پوشش روی کاغذ» به «اجرای قابل اتکا» تبدیل نمی‌شود.
 
-**EN:** staged-team has the *ownership skeleton* for most P/S problems (sub-agents, hooks, skills exist on paper), but repeated *enforcement gaps*: owner without blocking gate, writable scope scattered across departments, and undefined handoffs in the Detect→Learn cycle and QA→Release boundary. Without closing the top-10 priority gaps, paper coverage will not become reliable execution. Overall: ~45% COVERED, ~35% PARTIAL, ~20% GAP — strong on state/evidence/truth, weak on gaming resistance, cost/attention budgets, resurrection, and end-to-end verification.
+**EN:** staged-team has the *ownership skeleton* for most P/S problems (sub-agents, hooks, skills exist on paper), but repeated *enforcement gaps*: owner without blocking gate, writable scope scattered across offices, and undefined handoffs in the Detect→Learn cycle and QA→Release boundary. Without closing the top-10 priority gaps, paper coverage will not become reliable execution. Overall: ~45% COVERED, ~35% PARTIAL, ~20% GAP — strong on state/evidence/truth, weak on gaming resistance, cost/attention budgets, resurrection, and end-to-end verification.
 
 ---
 
@@ -172,7 +172,7 @@ The most repeated pattern is **ownership without enforcement**. Almost every sub
 
 sub-state-keeper is documented as single-owner canonical state, and sub-canonical-check reconciles Git/task/evidence/ledger/model. But:
 
-- departments.json currently allows multiple departments to write state/* (Dept 3 build and Dept 6 memory both touch it). Without a single-writer lease, sync-monitor will permanently report Drift Detected.
+- departments.json currently allows multiple offices to write state/* (DEVELOPERS OFFICE build and MEMORY OFFICE memory both touch it). Without a single-writer lease, sync-monitor will permanently report Drift Detected.
 - dashboard-view is scoped to derived views only — good — but nothing prevents a builder from writing directly to dashboard/* and bypassing canonical state.
 - **Recommendation:** departments.json -> writeLeases: { "state/*": "dept-6:state-keeper", "evidence/*": "dept-4:evidence-store", "decisions/*": "dept-1:decision-registry", "dashboard/*": "dept-6:dashboard-view" }. hooks/hooks.json -> PreToolUse(Write) checks lease and blocks violators.
 

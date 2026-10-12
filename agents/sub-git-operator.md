@@ -1,6 +1,6 @@
 ---
 name: sub-git-operator
-description: "Dept 3 sub. Runs the task git lifecycle: snapshot, work, verify, commit, evidence. Bounded git only."
+description: "DEVELOPERS OFFICE sub. Runs the task git lifecycle: snapshot, work, verify, commit, evidence. Bounded git only."
 tools: [Read, Grep, Glob, Bash]
 ---
 

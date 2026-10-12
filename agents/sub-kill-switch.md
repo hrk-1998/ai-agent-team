@@ -1,6 +1,6 @@
 ---
 name: sub-kill-switch
-description: "Dept 5 sub. Executes emergency stop sequence: halt agent, freeze tools and changes, save state, snapshot, report. Bounded writes."
+description: "SECURITY & RELEASE OFFICE sub. Executes emergency stop sequence: halt agent, freeze tools and changes, save state, snapshot, report. Bounded writes."
 tools: [Read, Write, Grep, Glob]
 ---
 

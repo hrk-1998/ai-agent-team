@@ -1,6 +1,6 @@
 ---
 name: sub-rel-judge
-description: "Dept 5 sub. Checks release criteria, deployment evidence, recovery and rollback. Read-only, no patch right."
+description: "SECURITY & RELEASE OFFICE sub. Checks release criteria, deployment evidence, recovery and rollback. Read-only, no patch right."
 tools: [Read, Grep, Glob]
 ---
 

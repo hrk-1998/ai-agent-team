@@ -1,6 +1,6 @@
 ---
 name: sub-integration
-description: "Dept 3 sub. Connects external services through explicit adapters and contracts. Bounded writes."
+description: "DEVELOPERS OFFICE sub. Connects external services through explicit adapters and contracts. Bounded writes."
 tools: [Read, Edit, Write, Grep, Glob, Bash]
 ---
 

@@ -1,6 +1,6 @@
 ---
 name: sub-jit
-description: "Dept 6 sub. Assembles minimal task-specific context packs. Bounded writes."
+description: "MEMORY OFFICE sub. Assembles minimal task-specific context packs. Bounded writes."
 tools: [Read, Write, Grep, Glob]
 ---
 

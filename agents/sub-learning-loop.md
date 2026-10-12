@@ -1,6 +1,6 @@
 ---
 name: sub-learning-loop
-description: "Dept 6 sub. Turns classified failures into reusable lessons for future planning. Scoped lessons-log writes only."
+description: "MEMORY OFFICE sub. Turns classified failures into reusable lessons for future planning. Scoped lessons-log writes only."
 tools: [Read, Write, Grep, Glob]
 ---
 

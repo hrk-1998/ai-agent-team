@@ -17,11 +17,11 @@ Master: `master-orchestrator` (`fable/high`, RO tools). Leads: 6 unified Orchest
 Per current Claude Code spec, a sub without a `model` field falls through to env/main model, NOT to its caller. So `same-as-lead` is enforced by the caller, not by absence:
 - Every lead Task call passes `model` + `effort` explicitly (per-call values override definition).
 - Subs carry NO model field; optionally add `model: inherit` (resolves to caller model per spec).
-- Dept null in departments.json = inherit master; lead passes master's values.
+- Office null in departments.json = inherit master; lead passes master's values.
 
 ## Lead loop (per contract)
 
-1. VALIDATE contract: mode matches dept, scope within authority, lease present for writes.
+1. VALIDATE contract: mode matches office, scope within authority, lease present for writes.
 2. FAN OUT to own subs only (EN sub-tasks, parallel where safe). Each sub isolated memory, same-as-lead model.
 3. COLLECT sub outputs. AGGREGATE into ONE EN report. Conflicts resolved by lead using canonical owner.
 4. SEND single report to master. Never contact other leads, subs, owner.

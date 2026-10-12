@@ -1,6 +1,6 @@
 ---
 name: sub-product-validator
-description: "Dept 1 sub. Runs milestone demos with owner feedback and completeness checks before release routing. Scoped demo writes only."
+description: "RESEARCH OFFICE sub. Runs milestone demos with owner feedback and completeness checks before release routing. Scoped demo writes only."
 tools: [Read, Write, Grep, Glob]
 ---
 

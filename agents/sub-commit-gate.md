@@ -1,6 +1,6 @@
 ---
 name: sub-commit-gate
-description: "Dept 3 sub. Approves or rejects each commit on verification evidence and scope. Read-only verdict, no commits."
+description: "DEVELOPERS OFFICE sub. Approves or rejects each commit on verification evidence and scope. Read-only verdict, no commits."
 tools: [Read, Grep, Glob, Bash]
 ---
 

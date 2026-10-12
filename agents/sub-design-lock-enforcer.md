@@ -1,6 +1,6 @@
 ---
 name: sub-design-lock-enforcer
-description: "Dept 2 sub. Enforces the locked design system: rejects silent changes to tokens, spacing, patterns, identity. Read-only."
+description: "PLANNING OFFICE sub. Enforces the locked design system: rejects silent changes to tokens, spacing, patterns, identity. Read-only."
 tools: [Read, Grep, Glob]
 ---
 

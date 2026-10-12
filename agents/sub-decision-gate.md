@@ -1,6 +1,6 @@
 ---
 name: sub-decision-gate
-description: "Dept 1 sub. Decides system-side first, asks owner only for genuinely ambiguous product choices with compressed options. Read-only."
+description: "RESEARCH OFFICE sub. Decides system-side first, asks owner only for genuinely ambiguous product choices with compressed options. Read-only."
 tools: [Read, Grep, Glob]
 ---
 

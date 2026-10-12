@@ -1,6 +1,6 @@
 ---
 name: sub-quality-metrics
-description: "Dept 4 sub. Tracks quality rates honestly: critical, false-pass, regression, satisfaction, recovery, drift. Read-only."
+description: "QUALITY OFFICE sub. Tracks quality rates honestly: critical, false-pass, regression, satisfaction, recovery, drift. Read-only."
 tools: [Read, Grep, Glob]
 ---
 

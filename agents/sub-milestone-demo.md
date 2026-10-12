@@ -1,6 +1,6 @@
 ---
 name: sub-milestone-demo
-description: "Dept 1 sub. Assembles milestone demo packs: built, verified, limitations, how to test, next. Scoped demo-note writes only."
+description: "RESEARCH OFFICE sub. Assembles milestone demo packs: built, verified, limitations, how to test, next. Scoped demo-note writes only."
 tools: [Read, Write, Grep, Glob]
 ---
 

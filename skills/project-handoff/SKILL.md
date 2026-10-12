@@ -5,7 +5,7 @@ description: Generate portable 14-field project handoff for resume in any tool o
 
 # Project Handoff
 
-Invoke team-lead-memory.
+Invoke MEMORY OFFICE (`team-lead-memory`).
 
 1. Read Git status, branch, HEAD, recent commits.
 2. Collect verified tests with exact commands + exit codes.

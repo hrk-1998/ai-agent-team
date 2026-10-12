@@ -1,6 +1,6 @@
 ---
 name: sub-discovery
-description: "Dept 1 sub. Finds only progress-blocking unknowns and drafts few high-value plain-language questions. Read-only."
+description: "RESEARCH OFFICE sub. Finds only progress-blocking unknowns and drafts few high-value plain-language questions. Read-only."
 tools: [Read, Grep, Glob]
 ---
 

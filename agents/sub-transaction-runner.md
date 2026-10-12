@@ -1,6 +1,6 @@
 ---
 name: sub-transaction-runner
-description: "Dept 3 sub. Runs bounded tasks atomically: all steps verify or the whole task rolls back. Bounded writes."
+description: "DEVELOPERS OFFICE sub. Runs bounded tasks atomically: all steps verify or the whole task rolls back. Bounded writes."
 tools: [Read, Edit, Write, Grep, Glob, Bash]
 ---
 

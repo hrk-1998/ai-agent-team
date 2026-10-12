@@ -1,6 +1,6 @@
 ---
 name: sub-data
-description: "Dept 3 sub. Owns data modeling, integrity, storage, migrations. Approval-gated. Bounded writes."
+description: "DEVELOPERS OFFICE sub. Owns data modeling, integrity, storage, migrations. Approval-gated. Bounded writes."
 tools: [Read, Edit, Write, Grep, Glob, Bash]
 ---
 

@@ -1,6 +1,6 @@
 ---
 name: sub-injection-firewall
-description: "Dept 5 sub. Screens external content as untrusted, sanitizes and blocks instruction overrides. Read-only."
+description: "SECURITY & RELEASE OFFICE sub. Screens external content as untrusted, sanitizes and blocks instruction overrides. Read-only."
 tools: [Read, Grep, Glob]
 ---
 

@@ -1,6 +1,6 @@
 ---
 name: sub-dashboard-view
-description: "Dept 6 sub. Renders derived dashboard views from canonical state only. Scoped view writes only."
+description: "MEMORY OFFICE sub. Renders derived dashboard views from canonical state only. Scoped view writes only."
 tools: [Read, Write, Grep, Glob]
 ---
 

@@ -1,18 +1,18 @@
 ---
 name: qa-model
-description: "Show or set Dept 4 QA model and effort. Usage: /qa-model [model] [effort]"
+description: "Show or set QUALITY OFFICE model and effort. Usage: /qa-model [model] [effort]"
 ---
 
-# QA Model Skill (Dept 4 QA)
+# QA Model Skill (QUALITY OFFICE)
 
-Manages model and effort for Dept 4 QA only: `team-lead-qa` AND all its subs
+Manages model and effort for QUALITY OFFICE only: `team-lead-qa` AND all its subs
 run on the same model + effort.
 
 ## Commands
 
-- `/qa-model` — show current Dept 4 setting.
-- `/qa-model [model] [effort]` — set Dept 4 model and effort.
-- `/qa-model default` — reset Dept 4 to the session model.
+- `/qa-model` — show current QUALITY OFFICE setting.
+- `/qa-model [model] [effort]` — set QUALITY OFFICE model and effort.
+- `/qa-model default` — reset QUALITY OFFICE to the session model.
 
 ## Model input (whatever `/model` shows you, you can use)
 
@@ -42,9 +42,9 @@ Valid efforts: `low`, `medium`, `high`, `xhigh`, `max`.
 3. With args: normalize the model, validate the effort, then UPDATE
    - json key `qa` → `{"model": "<resolved>", "effort": "<effort>"}`
    - `model:` and `effort:` in `agents/team-lead-qa.md`
-   - `effort:` in **every** `agents/sub-*.md` of this dept (the Agent tool
+   - `effort:` in **every** `agents/sub-*.md` of this office (the Agent tool
      cannot pass effort per call, so the subs must carry it).
 4. `default`: json key `qa` → `null`; delete the `model:` line and the
-   `effort:` line from the lead and from every sub of this dept.
+   `effort:` line from the lead and from every sub of this office.
 5. REPORT Persian simple:
-   «مدل دپارتمان آزمون روی [مدل] با effort [ایفورت] تنظیم شد. سرپرست و همهٔ ساب‌ها همگام شدند.»
+   «مدل اتاق کنترل کیفیت روی [مدل] با effort [ایفورت] تنظیم شد. سرپرست و همهٔ ساب‌ها همگام شدند.»

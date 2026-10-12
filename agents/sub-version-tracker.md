@@ -1,6 +1,6 @@
 ---
 name: sub-version-tracker
-description: Dept 6 sub. Owns the ordered version roadmap (MVP, v1, v2) and current pointer. Read-only registry plus scoped version-state writes.
+description: MEMORY OFFICE sub. Owns the ordered version roadmap (MVP, v1, v2) and current pointer. Read-only registry plus scoped version-state writes.
 tools: [Read, Write, Grep, Glob]
 ---
 

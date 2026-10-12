@@ -14,14 +14,14 @@ Plugin root: this repo (`D:\AI AGENT TEAM\DIT`). Install: copy to `~/.claude/ski
 | team-lead-release.md | opus | medium | Read,Grep,Glob,Bash,Agent |
 | team-lead-memory.md | inherit | high | Read,Write,Grep,Glob,Agent |
 
-## Subs by Dept (88 owned + env-gate + version-tracker + 3 new = 98 total agent files)
+## Subs by Office (88 owned + env-gate + version-tracker + 3 new = 98 total agent files)
 
-Dept 1 (18): sub-intake, sub-brain, sub-discovery, sub-research, sub-requirements, sub-uncertainty-rater, sub-productization, sub-assumption-registry, sub-decision-registry, sub-decision-gate, sub-question-gate, sub-attention-budget, sub-completeness-gate, sub-feature-factory-guard, sub-commercial-board, sub-milestone-demo, sub-validation-loop, sub-product-validator.
-Dept 2 (18): sub-planner, sub-change-impact, sub-deps, sub-ux, sub-visual-scout, sub-scaffold-picker (template choice: Vite/Next/FastAPI), sub-design-director, sub-design-lock-enforcer, sub-slop-filter, sub-arch, sub-arch-health, sub-reuse-scout, sub-complexity-governor, sub-pattern-library, sub-model-router, sub-model-failure-memory, sub-adapter-pack, sub-foundation-keeper.
-Dept 3 (12): sub-env-gate (blocking first, stack-detect node+python, live-source check), sub-frontend, sub-backend, sub-data, sub-integration, sub-snapshot-manager, sub-recovery-engine, sub-git-operator, sub-transaction-runner, sub-scope-guard, sub-commit-gate, sub-app-runner (boots dev server, health-check, restart once, URL report).
-Dept 4 (19): sub-diagnosis, sub-failure-taxonomy, sub-repair, sub-tech-judge, sub-product-qa, sub-visual-qa, sub-reality-test, sub-browser-driver (headless real-browser journey on the running app), sub-user-sim, sub-holdout-verify, sub-a11y-checker, sub-regression-firewall, sub-evidence-store, sub-truth-layer, sub-anti-gaming-monitor, sub-failure-budget, sub-quality-metrics, sub-benchmark-runner, sub-fault-injector.
-Dept 5 (9): sub-sec-judge, sub-injection-firewall, sub-credential-guard, sub-rel-judge, sub-kill-switch, sub-observability, sub-dep-drift-watch, sub-env-drift-watch, sub-devops.
-Dept 6 (15): sub-state-keeper, sub-context-monitor, sub-context-quality, sub-jit, sub-memory-poison-guard, sub-sync-monitor, sub-canonical-check, sub-cost-governor, sub-momentum-watch, sub-stale-detector, sub-resurrection, sub-learning-loop, sub-dashboard-view, sub-handoff, sub-version-tracker.
+RESEARCH OFFICE (18): sub-intake, sub-brain, sub-discovery, sub-research, sub-requirements, sub-uncertainty-rater, sub-productization, sub-assumption-registry, sub-decision-registry, sub-decision-gate, sub-question-gate, sub-attention-budget, sub-completeness-gate, sub-feature-factory-guard, sub-commercial-board, sub-milestone-demo, sub-validation-loop, sub-product-validator.
+PLANNING OFFICE (18): sub-planner, sub-change-impact, sub-deps, sub-ux, sub-visual-scout, sub-scaffold-picker (template choice: Vite/Next/FastAPI), sub-design-director, sub-design-lock-enforcer, sub-slop-filter, sub-arch, sub-arch-health, sub-reuse-scout, sub-complexity-governor, sub-pattern-library, sub-model-router, sub-model-failure-memory, sub-adapter-pack, sub-foundation-keeper.
+DEVELOPERS OFFICE (12): sub-env-gate (blocking first, stack-detect node+python, live-source check), sub-frontend, sub-backend, sub-data, sub-integration, sub-snapshot-manager, sub-recovery-engine, sub-git-operator, sub-transaction-runner, sub-scope-guard, sub-commit-gate, sub-app-runner (boots dev server, health-check, restart once, URL report).
+QUALITY OFFICE (19): sub-diagnosis, sub-failure-taxonomy, sub-repair, sub-tech-judge, sub-product-qa, sub-visual-qa, sub-reality-test, sub-browser-driver (headless real-browser journey on the running app), sub-user-sim, sub-holdout-verify, sub-a11y-checker, sub-regression-firewall, sub-evidence-store, sub-truth-layer, sub-anti-gaming-monitor, sub-failure-budget, sub-quality-metrics, sub-benchmark-runner, sub-fault-injector.
+SECURITY & RELEASE OFFICE (9): sub-sec-judge, sub-injection-firewall, sub-credential-guard, sub-rel-judge, sub-kill-switch, sub-observability, sub-dep-drift-watch, sub-env-drift-watch, sub-devops.
+MEMORY OFFICE (15): sub-state-keeper, sub-context-monitor, sub-context-quality, sub-jit, sub-memory-poison-guard, sub-sync-monitor, sub-canonical-check, sub-cost-governor, sub-momentum-watch, sub-stale-detector, sub-resurrection, sub-learning-loop, sub-dashboard-view, sub-handoff, sub-version-tracker.
 
 Total: 98 agent files. Rule: sub = same-as-lead.
 
@@ -35,7 +35,7 @@ team-workflow, e2e-workflow (/ai-agent-team:e2e-workflow runs MVP then v1 then v
 
 ## App builder chain
 
-Dept 2 sub-scaffold-picker picks a proven template → Dept 3 one-shot scaffold via sub-transaction-runner (write-set relaxed that batch only) → sub-app-runner boots dev server → Dept 4 sub-browser-driver drives the running app in a real headless browser (journey, console errors, screenshots) → skill app-preview opens the URL in the owner's browser pane (only the main session can show; subs verify over CLI).
+PLANNING OFFICE sub-scaffold-picker picks a proven template → DEVELOPERS OFFICE one-shot scaffold via sub-transaction-runner (write-set relaxed that batch only) → sub-app-runner boots dev server → QUALITY OFFICE sub-browser-driver drives the running app in a real headless browser (journey, console errors, screenshots) → skill app-preview opens the URL in the owner's browser pane (only the main session can show; subs verify over CLI).
 
 ## Versioning
 
@@ -43,9 +43,9 @@ Each version is gated: MVP green then feedback then repair then next version. E2
 
 ## Config
 
-departments.json: all keys null = every dept (master included) inherits the CURRENT SESSION model. Set per-dept via /master-model, /pro-model, /map-model, /eng-model, /qa-model, /rel-model, /mem-model; lead + all its subs switch together.
+departments.json: all keys null = every office (master included) inherits the CURRENT SESSION model. Set per-office via /master-model, /pro-model, /map-model, /eng-model, /qa-model, /rel-model, /mem-model; lead + all its subs switch together.
 
-Model input matches whatever `/model` shows: `desktop`/`inherit` (session model), `haiku`, `sonnet`, `opus`, `fable`, or any full id (`claude-*` passes through verbatim). Efforts: `low`, `medium`, `high`, `xhigh`, `max`. A set dept stores `{"model": ..., "effort": ...}` in departments.json and writes model/effort into the lead + effort into every sub.
+Model input matches whatever `/model` shows: `desktop`/`inherit` (session model), `haiku`, `sonnet`, `opus`, `fable`, or any full id (`claude-*` passes through verbatim). Efforts: `low`, `medium`, `high`, `xhigh`, `max`. A set office stores `{"model": ..., "effort": ...}` in departments.json and writes model/effort into the lead + effort into every sub.
 
 ## Activation
 

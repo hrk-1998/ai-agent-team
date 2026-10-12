@@ -1,6 +1,6 @@
 ---
 name: sub-ux
-description: "Dept 2 sub. Defines user journeys, info architecture, interaction, accessibility. Locks design system. Read-only."
+description: "PLANNING OFFICE sub. Defines user journeys, info architecture, interaction, accessibility. Locks design system. Read-only."
 tools: [Read, Grep, Glob]
 ---
 

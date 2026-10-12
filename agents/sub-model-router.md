@@ -1,6 +1,6 @@
 ---
 name: sub-model-router
-description: "Dept 2 sub. Profiles model capability and recommends the cheapest sufficient model per task with recorded rationale. Read-only."
+description: "PLANNING OFFICE sub. Profiles model capability and recommends the cheapest sufficient model per task with recorded rationale. Read-only."
 tools: [Read, Grep, Glob]
 ---
 

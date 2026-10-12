@@ -1,6 +1,6 @@
 ---
 name: sub-requirements
-description: "Dept 1 sub. Turns findings into testable traceable requirements with acceptance criteria. Read-only."
+description: "RESEARCH OFFICE sub. Turns findings into testable traceable requirements with acceptance criteria. Read-only."
 tools: [Read, Grep, Glob]
 ---
 

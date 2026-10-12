@@ -1,6 +1,6 @@
 ---
 name: sub-pattern-library
-description: "Dept 2 sub. Maintains versioned verified golden patterns for auth, CRUD, APIs, validation, migrations, errors, tests, deploy. Scoped library writes only."
+description: "PLANNING OFFICE sub. Maintains versioned verified golden patterns for auth, CRUD, APIs, validation, migrations, errors, tests, deploy. Scoped library writes only."
 tools: [Read, Write, Grep, Glob]
 ---
 

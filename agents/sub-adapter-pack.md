@@ -1,6 +1,6 @@
 ---
 name: sub-adapter-pack
-description: "Dept 2 sub. Defines execution-adapter contracts per coding tool so no lock-in to one runtime. Verifies real capabilities. Read-only."
+description: "PLANNING OFFICE sub. Defines execution-adapter contracts per coding tool so no lock-in to one runtime. Verifies real capabilities. Read-only."
 tools: [Read, Grep, Glob]
 ---
 

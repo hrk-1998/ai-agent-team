@@ -1,6 +1,6 @@
 ---
 name: sub-visual-qa
-description: "Dept 4 sub. Compares rendered product to approved design intent with real states. Read-only, no patch right."
+description: "QUALITY OFFICE sub. Compares rendered product to approved design intent with real states. Read-only, no patch right."
 tools: [Read, Grep, Glob]
 ---
 

@@ -1,6 +1,6 @@
 ---
 name: sub-validation-loop
-description: "Dept 1 sub. Runs build-demo-feedback-interpret-validate-decide loop into next build. Scoped validation-note writes only."
+description: "RESEARCH OFFICE sub. Runs build-demo-feedback-interpret-validate-decide loop into next build. Scoped validation-note writes only."
 tools: [Read, Write, Grep, Glob]
 ---
 

@@ -1,6 +1,6 @@
 ---
 name: sub-backend
-description: "Dept 3 sub. Implements domain behavior, services, APIs per contract. Bounded writes."
+description: "DEVELOPERS OFFICE sub. Implements domain behavior, services, APIs per contract. Bounded writes."
 tools: [Read, Edit, Write, Grep, Glob, Bash]
 ---
 

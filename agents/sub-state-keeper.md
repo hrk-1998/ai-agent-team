@@ -1,6 +1,6 @@
 ---
 name: sub-state-keeper
-description: "Dept 6 sub. Maintains single-owner canonical state per concern. Bounded writes."
+description: "MEMORY OFFICE sub. Maintains single-owner canonical state per concern. Bounded writes."
 tools: [Read, Write, Grep, Glob]
 ---
 

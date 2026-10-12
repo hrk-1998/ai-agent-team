@@ -1,6 +1,6 @@
 ---
 name: sub-cost-governor
-description: "Dept 6 sub. Tracks token and cost budgets per task and project, triggers fallback or safe stop. Read-only."
+description: "MEMORY OFFICE sub. Tracks token and cost budgets per task and project, triggers fallback or safe stop. Read-only."
 tools: [Read, Grep, Glob]
 ---
 

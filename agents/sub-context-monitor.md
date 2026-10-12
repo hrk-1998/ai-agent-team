@@ -1,6 +1,6 @@
 ---
 name: sub-context-monitor
-description: "Dept 6 sub. Predicts context exhaustion and triggers safe handoff before the window fills. Read-only."
+description: "MEMORY OFFICE sub. Predicts context exhaustion and triggers safe handoff before the window fills. Read-only."
 tools: [Read, Grep, Glob]
 ---
 

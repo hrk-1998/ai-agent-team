@@ -1,6 +1,6 @@
 ---
 name: sub-anti-gaming-monitor
-description: "Dept 4 sub. Detects weakened tests, changed criteria, fake evidence, self-approval, and protected-verification tampering. Read-only."
+description: "QUALITY OFFICE sub. Detects weakened tests, changed criteria, fake evidence, self-approval, and protected-verification tampering. Read-only."
 tools: [Read, Grep, Glob]
 ---
 

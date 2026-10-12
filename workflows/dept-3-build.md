@@ -1,10 +1,10 @@
-# Dept 3 Build — Department Workflow
+# DEVELOPERS OFFICE — Office Workflow
 
 Lead: `team-lead-build` (unified Orchestrator-Lead, inherits session model). Mode: Build Mode, scoped only. Subs: 12, gate + RW bounded + runner.
 
 ## Trigger
 
-Master sends ONE EN TaskContract per batch (`MODE=build`, scope files, acceptance, verify cmd, lease, rollback, stop, optional `scaffold-choice` from Dept 2).
+Master sends ONE EN TaskContract per batch (`MODE=build`, scope files, acceptance, verify cmd, lease, rollback, stop, optional `scaffold-choice` from PLANNING OFFICE).
 
 ## Step 0 — Environment Gate (blocking, must pass first)
 

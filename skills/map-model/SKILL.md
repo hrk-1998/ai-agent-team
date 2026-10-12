@@ -1,18 +1,18 @@
 ---
 name: map-model
-description: "Show or set Dept 2 Planning model and effort. Usage: /map-model [model] [effort]"
+description: "Show or set PLANNING OFFICE model and effort. Usage: /map-model [model] [effort]"
 ---
 
-# Map Model Skill (Dept 2 Planning)
+# Map Model Skill (PLANNING OFFICE)
 
-Manages model and effort for Dept 2 Planning only: `team-lead-planning` AND all
+Manages model and effort for PLANNING OFFICE only: `team-lead-planning` AND all
 its subs run on the same model + effort.
 
 ## Commands
 
-- `/map-model` — show current Dept 2 setting.
-- `/map-model [model] [effort]` — set Dept 2 model and effort.
-- `/map-model default` — reset Dept 2 to the session model.
+- `/map-model` — show current PLANNING OFFICE setting.
+- `/map-model [model] [effort]` — set PLANNING OFFICE model and effort.
+- `/map-model default` — reset PLANNING OFFICE to the session model.
 
 ## Model input (whatever `/model` shows you, you can use)
 
@@ -42,9 +42,9 @@ Valid efforts: `low`, `medium`, `high`, `xhigh`, `max`.
 3. With args: normalize the model, validate the effort, then UPDATE
    - json key `planning` → `{"model": "<resolved>", "effort": "<effort>"}`
    - `model:` and `effort:` in `agents/team-lead-planning.md`
-   - `effort:` in **every** `agents/sub-*.md` of this dept (the Agent tool
+   - `effort:` in **every** `agents/sub-*.md` of this office (the Agent tool
      cannot pass effort per call, so the subs must carry it).
 4. `default`: json key `planning` → `null`; delete the `model:` line and the
-   `effort:` line from the lead and from every sub of this dept.
+   `effort:` line from the lead and from every sub of this office.
 5. REPORT Persian simple:
-   «مدل دپارتمان نقشه روی [مدل] با effort [ایفورت] تنظیم شد. سرپرست و همهٔ ساب‌ها همگام شدند.»
+   «مدل اتاق برنامه‌ریزی و نقشه‌کشی روی [مدل] با effort [ایفورت] تنظیم شد. سرپرست و همهٔ ساب‌ها همگام شدند.»
