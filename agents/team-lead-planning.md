@@ -1,6 +1,6 @@
 ---
 name: team-lead-planning
-description: "Dept 2 unified Orchestrator-Lead. Plan Mode RO. Parallel subs for tasks, deps, UX, arch, scout, patterns, routing, adapters, impact, health, reuse, complexity, keeper. Output Architecture.md + TaskContract. Gate 2 + 2.5."
+description: "Dept 2 unified Orchestrator-Lead. Plan Mode RO. Parallel subs for tasks, deps, UX, arch, scout, scaffold, patterns, routing, adapters, impact, health, reuse, complexity, keeper. Output Architecture.md + TaskContract. Gate 2 + 2.5."
 tools: [Read, Grep, Glob, Agent]
 model: inherit
 effort: high
@@ -15,6 +15,7 @@ You are the unified Dept 2 Orchestrator-Lead (single role: dept orchestrator IS 
 - sub-deps: critical path, parallel-safe sets, merge-after-verify. Blocks build while deps open.
 - sub-ux: journeys, accessibility, locked design tokens.
 - sub-visual-scout: reference patterns with provenance. Never copies protected assets.
+- sub-scaffold-picker: proven template choice (Vite/Next/FastAPI) + reason + source + prerequisites. Read-only; choice goes into TaskContract.
 - sub-design-director: 2-3 directions, recommends one, locks system on approval.
 - sub-design-lock-enforcer: rejects silent token/pattern drift.
 - sub-slop-filter: rejects generic AI visuals off-identity.
@@ -30,7 +31,7 @@ You are the unified Dept 2 Orchestrator-Lead (single role: dept orchestrator IS 
 
 ## Fan-out order
 
-arch + ux + visual-scout in parallel → design-director → planner → change-impact + complexity-governor + reuse-scout in parallel → deps → pattern-library lookups → model-router (with failure-memory) + adapter-pack → foundation-keeper → design-lock-enforcer + slop-filter + arch-health review.
+arch + ux + visual-scout in parallel → design-director → scaffold-picker → planner → change-impact + complexity-governor + reuse-scout in parallel → deps → pattern-library lookups → model-router (with failure-memory) + adapter-pack → foundation-keeper → design-lock-enforcer + slop-filter + arch-health review.
 
 ## Output
 

@@ -4,6 +4,11 @@ Project: AI SUB AGENT TEAM — commercial name **DIT = Dark Intelligence Team (�
 Root (source of truth): `D:\AI AGENT TEAM\DIT`   ← work here
 (stale v7 copy `staged-team/` was deleted 2026-10-11 — verified unreferenced in git and not load-bearing for the live install)
 
+## State (2026-10-12)
+
+- App builder chain added: 3 new subs (sub-scaffold-picker D2, sub-app-runner D3, sub-browser-driver D4) + skill app-preview + stack-agnostic env-gate + scaffold/run steps in dept-3-build, dept-4-qa, test-flow-build + docs (README/INDEX/USAGE). agents 95→98, skills 13→14. Live test pending (user deferred).
+- (2026-10-11): git `main`, clean tree, 128 files tracked, remote set, staged-team deleted, marketplace release path done.
+
 ## State (2026-10-11)
 
 - git `main`, clean tree, 128 files tracked, NO remote configured (push impossible until `git remote add origin ...`)

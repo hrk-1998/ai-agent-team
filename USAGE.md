@@ -78,6 +78,7 @@ FA: دپارتمان ۱ حداکثر ۳ سؤال ساده می‌پرسد، یک
 | `/ai-agent-team:mem-model ...` | تغییر مدل دپارتمان حافظه |
 | `/ai-agent-team:master-model ...` | تغییر مدل پیش‌فرض اصلی |
 | `/ai-agent-team:project-handoff` | ساخت فایل HANDOFF برای ادامهٔ کار |
+| `/ai-agent-team:app-preview` | اجرای اپ ساخته‌شده و نمایش در مرورگر |
 | `/ai-agent-team:mindmap` | نمودار گرافیکی ساختار تیم |
 
 Model input: whatever `/model` shows you, you can use —
@@ -108,6 +109,23 @@ FA: به‌طور پیش‌فرض همهٔ دپارتمان‌ها همان مد
 می‌کنند. اگر سشن شما روی کلود هایکوی ۴.۵ باشد، کل تیم روی هایکوی ۴.۵
 اجرا می‌شود. فقط اگر خودتان به یک دپارتمان مدل بدهید، آن دپارتمان
 (به همراه همهٔ ساب‌ایجنت‌هایش) عوض می‌شود.
+
+## App builder: build → run → see it / اپ‌بیلدر: ساخت → اجرا → دیدن
+
+EN: The team is now a full AI app builder. Type your app idea (via
+`/ai-agent-team:team-workflow`). Dept 2 picks a proven template
+(Vite/Next/FastAPI), Dept 3 scaffolds it one-shot and boots the dev server,
+Dept 4 drives the running app in a real headless browser (clicks the core
+journey, reads console errors, takes screenshots). When the build is green,
+run `/ai-agent-team:app-preview` — the app opens in your browser pane and you
+see it running.
+
+FA: تیم الان یک اپ‌بیلدر کامل است. ایدهٔ اپ خود را بنویسید (با
+`/ai-agent-team:team-workflow`). دپارتمان ۲ یک تمپلیت اثبات‌شده انتخاب می‌کند،
+دپارتمان ۳ آن را یک‌باره می‌سازد و سرور را بالا می‌آورد، دپارتمان ۴ اپِ در حال
+اجرا را با مرورگر واقعی تست می‌کند (کلیک مسیر اصلی، خطاهای کنسول، اسکرین‌شات).
+وقتی ساخت سبز شد، دستور `/ai-agent-team:app-preview` را بزنید — اپ در پنجرهٔ
+مرورگر شما باز می‌شود و آن را در حال اجرا می‌بینید.
 
 ## Safety / امنیت
 

@@ -1,8 +1,10 @@
-# AI Agent Team Plugin (v7, auto-routing + session-model default + contract schema)
+# AI Agent Team Plugin (v8, AI App Builder: scaffold + run + browse)
 
 Hierarchical subagent team for Claude Code. Master = your main session.
-6 unified dept orchestrator-leads. 86 subs. Contracts, gates, evidence.
+6 unified dept orchestrator-leads. 91 subs. Contracts, gates, evidence.
 Owner edge: simple Persian. Machine edges: strict English.
+App builder: scaffold from a proven template, boot the app, drive it in a
+real browser, show it in your pane.
 
 ## Install (auto in every project)
 
@@ -40,6 +42,23 @@ then just type your idea in any message:
 /ai-agent-team:mindmap
 ```
 
+Build an app and see it running:
+
+```text
+/ai-agent-team:team-workflow
+ایده من: فروشگاه ساده با سبد خرید
+```
+
+then, once the build is green:
+
+```text
+/ai-agent-team:app-preview
+```
+
+Dept 3 boots the app, Dept 4 drives it with a real browser, and this skill
+opens the URL in your session's browser pane. Browser display lives only in
+the main session — subs verify over CLI, never in a pane.
+
 Full bilingual guide: USAGE.md. Contract schema: contracts/task-contract.md.
 
 ```text
@@ -69,6 +88,11 @@ Efforts: `low`, `medium`, `high`, `xhigh`, `max`.
 - Null-depts inherit the session model at runtime (`model: inherit`).
   A set dept writes `{"model": ..., "effort": ...}` to `departments.json`
   and into the lead + all its subs, so the whole dept runs on it.
+- App builder chain: Dept 2 `sub-scaffold-picker` chooses a proven template
+  (Vite/Next/FastAPI) → Dept 3 one-shot scaffold via transaction-runner →
+  `sub-app-runner` boots the dev server → Dept 4 `sub-browser-driver` drives
+  the running app headless (journey + console errors + screenshots) →
+  `/ai-agent-team:app-preview` shows the URL in the owner's browser pane.
 - Foreground only. Planning lead read-only until plan approved.
 - Guards in `hooks/hooks.json`: no `git add -A`/history rewrite, no real `.env` reads/writes.
 - Plugin auto-loads in every project once installed at user scope. No per-project setup.
